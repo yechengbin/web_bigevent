@@ -5,11 +5,15 @@ body {
     width: 100%;
     height: 100%;
     /* F:\leading end\前端\ajax\08-ajax\第06天\第02遍\大事件\code\assets\images */
-    background: url('../images/login_bg.jpg') no-repeat center;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
     background-size: cover;
 }
 
 .loginAndRegBox {
+    /* 内边框 左右缩进30px      在这设施方便以后有新的表单按键 */
+    /* padding: 0 30px; */
+    /* 方便计算  */
+    /* box-sizing: border-box;  */
     width: 400px;
     height: 310px;
     background: #fff;
@@ -22,5 +26,41 @@ body {
 .title-box {
     width: 100%;
     height: 60px;
-    background: url('../images/login_title.png') no-repeat center center;
+    background: url('/assets/images/login_title.png') no-repeat center center;
+}
+
+.reg-box {
+    display: none;
+}
+.layui-form{
+    padding: 0 30px;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.links a{
+    /* float: right; */
+    font-size: 12px;
+}
+
+/* 图标父级定位 */
+.layui-form-item{
+    /* 相对定位 */
+    position: relative;
+}
+
+
+/* 图标内部 类 进行定位 */
+.layui-icon{
+    /* 绝对定位 */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* 撑开图标 避免 字图重叠 */
+.layui-input{
+    /* padding: 0 30px; */
+    padding-left: 32px;
 }
